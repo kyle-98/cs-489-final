@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/styles/main_style.css">
+        <link rel="stylesheet" href="/styles/home_style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    </head>
+
+    <body>
+        <!--Header-->
+        <div class="header" id="header">
+            <div id="main-head-container" style="height:180px;display:table;width:100%;text-align:center;">
+                <span id="main-head-text" style="font-size:37px;font-weight:bold;">Atlantic Tropical Cyclone History</span>
+                <span id="sub-head-text" style="font-size:23px;">
+                    <br>
+                    Virginia Wesleyan University
+                </span>
+            </div>
+        </div>
+
+        <!--Nav Bar-->    
+        <div id="nav-bar"></div>
+        <script>
+            $(function(){
+                $("#nav-bar").load("navbar.html");
+                });
+            
+            $(this).addClass('active'); $(this).parents('li').addClass('active');
+        </script>
+
+        <div id="main-content">
+            <div id="top-content">
+                <h1>Homepage</h1>
+                <p></p>
+            </div>
+            <div id="middle-content">
+                <h2></h2>
+                <div id="left-content">
+                    <img src="https://c.tenor.com/DXxjLkGd0zcAAAAC/hurricane-warning.gif" alt="hurricane flag gif" >
+                </div>
+    
+                <div id="right-content">
+                    <h2>About the Project</h2>
+                    <p>
+                        This project contains analysis and visualization on data provided by NOAA on past tropical cyclones that have 
+                        existed in the Atlantic basin since the year 2000.  The website contains visualizations from graphs and charts to different
+                        types of maps including heatmaps and an interactive map.  There is detail about each storm and the dates on each occured.  
+                        Analysis of the data gives users a range of options to view and understand the datasets.
+                        <br><br>
+                        The research for this project was data analysis and how to analyze data with different programming languages.
+                        The languages used to analyze data in this project are Javascript, including AJAX & JQuery, and Python.  Data analysis 
+                        is very important on many different levels.
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+        
+
+
+        
+    </body>
+
+
+
+</html>
