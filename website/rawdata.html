@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/styles/main_style.css">
+        <link rel="stylesheet" href="/styles/home_style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <style>
+            #right-content embed{
+                width: 100%;
+                height:100%;
+            }
+            #left-content p{
+                width: 45%;
+                text-align: left;
+                margin-left: 31%;
+            }
+            #right-content a{
+                display:inline-block;
+                background-color:#0085CA;
+                border: none;
+                border-radius: 5px;
+                color:white;
+                padding: 9px;
+                margin-top: 1rem;
+                text-decoration: none;
+                margin-bottom: 10px;
+            }
+            #right-content a:hover{
+                background-color: #003087;
+                cursor: pointer;
+            }
+            @media(max-width: 640px){
+                #left-content {
+                    width: 84%;
+                    position: relative;
+                    left: 17%;
+                    top: 96%;
+                }
+                #left-content p{
+                    text-align: left;
+                    margin-left: -6%;
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <!--Header-->
+        <div class="header" id="header">
+            <div id="main-head-container" style="height:180px;display:table;width:100%;text-align:center;">
+                <span id="main-head-text" style="font-size:37px;font-weight:bold;">Raw Data</span>
+                <span id="sub-head-text" style="font-size:23px;">
+                    <br>
+                    Virginia Wesleyan University
+                </span>
+            </div>
+        </div>
+
+        <!--Nav Bar-->    
+        <div id="nav-bar"></div>
+        <script>
+            $(function(){
+                $("#nav-bar").load("navbar.html");
+                });
+            
+            $(this).addClass('active'); $(this).parents('li').addClass('active');
+        </script>
+
+        <div id="main-content">
+            <div id="top-content">
+                
+                
+            </div>
+            <div id="middle-content">
+                <h2></h2>
+                <div id="left-content">
+                    <h2>Information</h2>
+                    <p>This data was provided by NOAA.  The link to this is on the maps and in the resources page.
+                        This is the raw data that was used to begin the project with.  All visualizations on this website
+                        are made from the analysis performed on the data to the side.
+                    </p>
+                </div>
+    
+                <div id="right-content">
+                    <h2>Raw Data File</h2>
+                    <embed type="text/html" src="tropical_data_noaa.txt">
+                    <a href="tropical_data_noaa.txt" target="_blank">Click Here To View</a>
+                </div>
+            </div>
+            
+        </div>
+        
+
+
+        
+    </body>
+
+
+
+</html>

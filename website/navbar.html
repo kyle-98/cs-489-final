@@ -1,0 +1,86 @@
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<input class="mobile-menu" type="checkbox" id="mobile-menu"/>
+<label class="hb" for="mobile-menu"><span class="hb-line"></span></label>
+<div id="main-menu-bar" class="main-menu-bar" >
+    <ul>
+        <li><a href="index.html">
+            Home
+        </a></li>
+        <li>
+            <div class="dropdown">
+                <a class="dropdown-btn" id="dropdown-btn" onclick="dropDown()">Data</a>
+                <div class="dropdown-content" id="dropdown-content">
+                    <a href="rawdata.html">Raw Data</a>
+                    <a href="datestats.php">Date Statistics</a>
+                    <a href="datecorrelation.php">Date Correlations</a>
+                    <a href="tempcorrelation.php">Temperature Correlations</a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="dropdown-2">
+                <a class="dropdown-btn-2" id="dropdown-btn-2" onclick="dropDown_2()">Research</a>
+                <div class="dropdown-content-2" id="dropdown-content-2">
+                    <a href="midterm.html">Midterm Report</a>
+                </div>
+            </div>
+            
+        </li>
+        <li>
+            <div class="dropdown-3">
+                <a class="dropdown-btn-3" id="dropdown-btn-3" onclick="dropDown_3()">Maps</a>
+                <div class="dropdown-content-3" id="dropdown-content-3">
+                    <a href="map.php">Track Map</a>
+                    <a href="heatmap.php">Heatmap</a>
+                </div>
+            </div>
+        </li>
+        <li><a href="aboutme.html">
+            About Me & Sources
+        </a></li>
+
+    </ul>
+</div>
+
+<script>
+    $(function(){
+        $('a').each(function(){
+            if ($(this).prop('href') == window.location.href) {
+                $(this).addClass('active'); $(this).parents('li').addClass('active');
+            }
+        });
+    });
+
+    function dropDown() {
+        document.getElementById("dropdown-content").classList.toggle("show");  
+    }
+
+    function dropDown_2() {
+        document.getElementById("dropdown-content-2").classList.toggle("show-2");  
+    }
+
+    function dropDown_3(){
+        document.getElementById("dropdown-content-3").classList.toggle("show-3");
+    }
+
+    window.onclick = function(e) {
+        if (!e.target.matches('.dropdown-btn')) {
+            var myDropdown = document.getElementById("dropdown-content");
+            if (myDropdown.classList.contains('show')) {
+                myDropdown.classList.remove('show'); 
+            }
+        }
+        if(!e.target.matches('.dropdown-btn-2')){
+            var myDropdown2 = document.getElementById("dropdown-content-2");
+            if (myDropdown2.classList.contains('show-2')){
+                myDropdown2.classList.remove('show-2');
+            }
+        }
+        if(!e.target.matches('.dropdown-btn-3')){
+            var myDropdown3 = document.getElementById("dropdown-content-3");
+            if(myDropdown3.classList.contains('show-3')){
+                myDropdown3.classList.remove('show-3');
+            }
+        }
+    }
+</script>

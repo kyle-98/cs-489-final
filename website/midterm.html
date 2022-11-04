@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/styles/main_style.css">
+        <link rel="stylesheet" href="/styles/term_styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    </head>
+
+    <html>
+        <!--Header-->
+        <div class="header" id="header">
+            <div id="main-head-container" style="height:180px;display:table;width:100%;text-align:center;">
+                <span id="main-head-text" style="font-size:37px;font-weight:bold;">MidTerm Report</span>
+                <span id="sub-head-text" style="font-size:23px;">
+                    <br>
+                    Kyle Forker
+                </span>
+            </div>
+        </div>
+
+        <!--Nav Bar-->    
+        <div id="nav-bar"></div>
+        <script>
+            $(function(){
+                $("#nav-bar").load("navbar.html");
+                });
+            
+            $(this).addClass('active'); $(this).parents('li').addClass('active');
+        </script>
+
+        <div id="main-content">
+
+            <div id="top-items">
+                <h1>Midterm Research Report</h1>
+                <p>This report details the research and work that was completed during the first half of the semseter.
+                    All research is organized and explained thourghly in the linked PDF and Github.
+                </p>
+            </div>
+
+            <div id="middle-content">
+                <div id="middle-left">
+                    <h2>Key Topics</h2>
+                    <dl>
+                        <dt>Research:</dt>
+                            <dd>• Selected Topic</dd>
+                            <dd>• Data Cleaning</dd>
+                            <dd>• Data Analysis</dd>
+                        <dt>Front-End Code:</dt>
+                            <dd>• HTML</dd>
+                            <dd>• CSS</dd>
+                            <dd>• Javascript</dd>
+                        <dt>Back-End Code:</dt>
+                            <dd>• PhP</dd>
+                            <dd>• Python</dd>
+                        
+                    </dl>
+                </div>
+    
+                <div id="middle-right">
+                    <h2>Read About the Research</h2>
+                    <iframe src="midterm.pdf#toolbar=0" width="100%" height="100%"></iframe>
+                    <div id="mobile-desc">
+                        <p>Since you're on mobile you can have a better expierence by reading it here.</p>
+                        <a href="midterm.pdf" target="_blank">Click to Read</a>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div id="bottom-items">
+                <p>Link to the Github where all source code is publically avaliable:</p>
+                <a href="https://github.com/kyle-98/cs-489-final" target="_blank">Github</a>
+            </div>
+
+            
+        </div>
+        
+
+    </html>
+
+</html>
