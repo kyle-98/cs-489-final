@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/styles/main_style.css">
+        <link rel="stylesheet" href="/styles/aboutme_style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    </head>
+
+    <body>
+        <!--Header-->
+        <div class="header" id="header">
+            <div id="main-head-container" style="height:180px;display:table;width:100%;text-align:center;">
+                <span id="main-head-text" style="font-size:37px;font-weight:bold;">About Me & Sources</span>
+                <span id="sub-head-text" style="font-size:23px;">
+                    <br>
+                    Kyle Forker
+                </span>
+            </div>
+        </div>
+
+        <!--Nav Bar-->    
+        <div id="nav-bar"></div>
+        <script>
+            $(function(){
+                $("#nav-bar").load("navbar.html");
+                });
+            
+            $(this).addClass('active'); $(this).parents('li').addClass('active');
+        </script>
+
+        <div id="main-content">
+            <div id="top-content">
+                <h1>About Me</h1>
+                <p></p>
+            </div>
+            <div id="middle-content">
+                <div id="left-content">
+                    <dl>
+                        <dt>Programming Languages I Know:</dt>
+                            <dd>• Java</dd>
+                            <dd>• Python</dd>
+                            <dd>• Javascript</dd>
+                            <dd>• HTML/CSS</dd>
+                            <dd>• PhP</dd>
+                            <dd>• MySQL</dd>
+                            <dd>• COBOL</dd>
+                            <dd>• C#.NET</dd>
+                            <dd>• Basic</dd>
+                            <dd>• Assembly (x86)</dd>
+                            <dd>• Racket</dd>
+                    </dl>
+                </div>
+    
+                <div id="right-content">
+                    <p>
+                        I'm a Computer Science student here at Virginia Wesleyan University.  I have created this project for my senior capstone research class.
+                        I am currently very interested in not only programming, but meteorlogy as well as space exploration.  
+                        <br><br>My passion for meteorlogy led me to this project idea.
+                        I thought this would be a good project to not only develop skills in Javascript, but to be able to get a taste of being a full-stack developer working on both the 
+                        backend and the front-end of a website.
+                        While the main research for the project was data analysis and visualization of data for facitiliation to the public, I enjoy researching and learning about 
+                        meteorlogy as a hobby.   These two things combined together to end up with this final project.
+                    </p>
+                </div>
+            </div>
+            <hr>  
+            <div id="top-b-content">
+                <h1>Sources & Project Information</h1>
+            </div>         
+            <div id="bottom-content">
+                <div id="left-b-content">
+                    <h3>Programming Languages Used:</h3>
+                    <dl>
+                        <dt>- Python</dt>
+                        <dt>- Javascript</dt>
+                            <dd>• AJAX</dd>
+                            <dd>• JQuery</dd>
+                            <dd>• Leaflet</dd>
+                            <dd>• tingle</dd>
+                            <dd>• Chart.js</dd>
+                            <dd>• heatmap.js</dd>
+                        <dt>- HTML/CSS</dt>
+                        <dt>- PhP</dt>
+                        <dt>- MySQL</dt>
+                    </dl>
+                </div>
+                <div id="right-b-content">
+                    <h3>Sources:</h3>
+                    <dl>
+                        <dt>- NOAA</dt>
+                            <dd>• All data from the project is sourced from them.</dd>
+                        <dt>- TropicalTidbits</dt>
+                            <dd>• Few graphics for explaniations come from them as well as inspiration for the project.</dd>
+                        <dt>- Dr. Wang<dt>
+                            <dd>• For hosting the website with the zeus server.</dd>
+                    </dl>
+                </div>
+
+            </div>
+        </div>
+ 
+    </body>
+
+</html>
