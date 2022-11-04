@@ -1,0 +1,47 @@
+#map { 
+    height: 580px; 
+    margin:50px;
+    margin-top:0px;
+}
+
+#left-content{
+    display: inline-block;
+    width:49%;
+    text-align: center;
+}
+
+#right-content{
+    display: inline-block;
+    width:49%;
+}
+#selectors label{
+    font-size: 25px;
+    display: inline-block;
+    width: 5rem;
+    text-align: right;
+}
+#selectors select{
+    height:1.5rem;
+    width: 7rem;
+    margin-right: 1rem;
+    margin-left: .5rem;
+}
+#storm-selector{
+    position: relative;
+}
+#storm-submit{
+    background-color:#0085CA;
+    border: none;
+    border-radius: 5px;
+    color:white;
+    height: 2rem;
+    width: 3rem;
+    position: absolute;
+    top: -34%;
+    cursor: pointer;
+}
+
+#storm-submit:hover{
+    background-color: #003087;
+    cursor: pointer;
+}
