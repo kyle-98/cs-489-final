@@ -1,0 +1,263 @@
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+body:focus{outline: none;}
+
+
+#main-head-container{
+    background-color: #b8eaf8;
+    background-image: url(/pictures/20181010-HURMichael1730UTC01.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+#main-menu-bar{
+    background-color: #0085CA;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    line-height: normal;
+    position: absolute;
+    display: inline;
+    vertical-align: middle;
+    position: absolute;
+    top: 180px;
+    box-shadow:rgb(255,255,255) 0px 0px 0px;
+}
+
+#main-menu-bar ul { 
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.541);
+}
+
+#main-menu-bar ul li {
+    display:inline-block;
+    margin-left: -5px;
+	height: 50px;
+}
+
+#main-menu-bar a{
+    display: block;
+    border: none;
+    height: 50px;
+    color:white;
+    background: #0085CA;
+    font-size: 18px;
+    cursor: pointer;
+    line-height: 50px;
+    padding-left: 24px;
+    padding-right: 24px;
+    text-decoration: none;
+}
+
+#main-menu-bar a.active{background: #003087;}
+
+#main-menu-bar a:hover {background: #003087;}
+
+#main-head-text{
+    top: 20%;
+    position: relative;
+}
+
+#sub-head-text{
+    top: 20%;
+    position: relative;
+}
+
+/* Drop down Nav Bar*/
+.dropdown-content{
+    display:none;
+    position:absolute;
+    z-index: 1;
+    box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.2);
+    min-width: 200px;
+}
+
+.show{
+    display:block;
+}
+
+.dropdown-content a{
+    line-height: 25px !important;
+    font-size: 16px !important;
+    font-weight:400;
+    background-color: rgb(240, 240, 240) !important;
+    color: black !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    height: 30px !important;
+}
+
+.dropdown-content a:hover{
+    background-color:rgb(197, 197, 197) !important;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/*Drop down 2*/
+.dropdown-content-2{
+    display:none;
+    position:absolute;
+    z-index: 1;
+    box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.2);
+    min-width: 200px;
+}
+
+.show-2{
+    display:block;
+}
+
+.dropdown-content-2 a{
+    line-height: 25px !important;
+    font-size: 16px !important;
+    font-weight:400;
+    background-color: rgb(240, 240, 240) !important;
+    color: black !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    height: 30px !important;
+}
+
+.dropdown-content-2 a:hover{
+    background-color:rgb(197, 197, 197) !important;
+}
+
+.dropdown-2 {
+    position: relative;
+    display: inline-block;
+}
+
+
+
+/*Drop down 3*/
+.dropdown-content-3{
+    display:none;
+    position:absolute;
+    z-index: 1;
+    box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.2);
+    min-width: 200px;
+}
+
+.show-3{
+    display:block;
+}
+
+.dropdown-content-3 a{
+    line-height: 25px !important;
+    font-size: 16px !important;
+    font-weight:400;
+    background-color: rgb(240, 240, 240) !important;
+    color: black !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    height: 30px !important;
+}
+
+.dropdown-content-3 a:hover{
+    background-color:rgb(197, 197, 197) !important;
+}
+
+.dropdown-3 {
+    position: relative;
+    display: inline-block;
+}
+
+.mobile-menu{
+    display:none;
+}
+@media (max-width: 640px){
+    #main-menu-bar a{
+        display:none;
+    }
+    .hb{
+        cursor: pointer;
+        float: right;
+        padding: 40px 20px;
+        position: absolute;
+        top: 164px;
+        z-index: 2;
+    }
+
+    .hb-line{
+        background: white;
+        display: block;
+        height: 2px;
+        position: relative;
+        width: 24px;
+    }
+
+    .hb-line::before, .hb-line::after{
+        background: white;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+
+    }
+    .hb-line::before{
+        top: 5px;
+    }
+    .hb-line::after{
+        top: -5px;
+    }
+    .mobile-menu:checked ~ #main-menu-bar a {
+        display: inline-block;
+        text-align: center;
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 100%;
+
+        
+    }
+    .mobile-menu:checked ~ .hb .hb-line{
+        background: transparent;
+    }
+    .mobile-menu:checked ~ #main-menu-bar{
+        height: 200%;
+        width: 100%;
+        text-align: center;
+        z-index: 1;
+    }
+    #main-menu-bar ul{
+        width: 100%;
+        margin:-33px;
+        display: inline-block;
+
+    }
+    .mobile-menu:checked ~ #main-menu-bar li{
+        width: 100%;
+        display: inline-block;
+    }
+    .mobile-menu:checked ~ #main-menu-bar ul{
+        width: 100%;
+        margin: 0px;
+        display: inline-block;
+        box-shadow: none;
+    }
+
+    #main-head-text{
+        font-size: 28px !important;
+        top: 36%;
+    }
+
+    #sub-head-text{
+        font-size: 20px !important;
+        top: 38%
+    }
+
+    
+    
+
+
+
+}

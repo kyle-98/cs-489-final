@@ -1,0 +1,56 @@
+#top-content{
+    display: inline-block;
+    text-align: center;
+    width: 60%;
+    margin-left:19%;
+}
+
+#middle-content{
+    display:inline-block;
+    width: 90%;
+}
+
+#left-content{
+    display:inline-block;
+    width:54%;
+    text-align: center;
+}
+#right-content p{
+    width:65%;
+    margin-left:20%;
+}
+
+#right-content{
+    display: inline-block;
+    width:41%;
+    text-align: center;
+    position: absolute;
+    height:60%;
+    margin-bottom:20%;
+}
+
+@media (max-width: 640px){
+    #top-content{
+        width: 46%;
+        margin-left:25%;
+    }
+     
+    
+    #right-content{
+        position: relative;
+        margin-left:4%;
+        width:100%;
+
+    }
+
+    #left-content {
+        width:50%;
+        position: relative;
+        left:30%;
+        top:96%;
+    }
+    #left-content img{
+        width: 50%;
+    }
+    
+}

@@ -1,0 +1,69 @@
+#bottom-content{
+    position:relative;
+    margin:50px;
+}
+#selectors {
+    width: 15%;
+    text-align: center;
+    margin-left: 11%;
+    position: absolute;
+    margin-top: 3%;
+}
+
+#type-submit{
+    background-color:#0085CA;
+    border: none;
+    border-radius: 5px;
+    color:white;
+    height: 2rem;
+    width: 3rem;
+    position: absolute;
+    cursor: pointer;
+    margin-left: 3%;
+    margin-top: -1%;
+}
+
+#type-submit:hover{
+    background-color: #003087;
+    cursor: pointer;
+}
+
+h2 {
+    text-align:center;
+}
+#chart-explain{
+    margin-left: 15%;
+    margin-right:15%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid #696969;
+}
+.help-data{
+    display: none;
+}
+.help-popup-btn{
+    display: inline-block;
+    background-color: #0085CA;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 9px;
+    margin-top: 1rem;
+    text-decoration: none;
+}
+.help-popup-btn:hover{
+    cursor: pointer;
+    background-color: #003087;
+}
+
+#chart-helpicon{
+    position: absolute;
+    right: 0px;
+    margin-right: .5%;
+    margin-top: 5.2%;
+}
+#help-icon:hover{
+    cursor: pointer;
+}

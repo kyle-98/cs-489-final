@@ -1,0 +1,144 @@
+#choice-1 {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
+#choice-1-helper {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 50px;
+    height: 25px;
+    background: gray;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+    margin: 10px;
+}
+#choice-1-helper:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 90px;
+    transition: 0.3s;
+}
+#choice-1:checked + #choice-1-helper:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+}
+#choice-1-helper:active:after {
+    width: 25px;
+}
+#choice-1-lbl {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+#c1{ 
+    position: absolute;
+    margin-left: 2%;
+}
+
+
+#choice-2 {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
+#choice-2-helper {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 50px;
+    height: 25px;
+    background: gray;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+    margin: 10px;
+}
+#choice-2-helper:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 90px;
+    transition: 0.3s;
+}
+#choice-2:checked + #choice-2-helper:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+}
+#choice-2-helper:active:after {
+    width: 25px;
+}
+#choice-2-lbl {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+#c2{ 
+    position: absolute;
+    margin-left: 2%;
+}
+
+
+#chart-1-helpicon{
+    position: absolute;
+    right: 0px;
+    margin-right: .5%;
+    margin-top: 2%;
+}
+#help-icon:hover{
+    cursor: pointer;
+}
+
+h2 {
+    text-align:center;
+}
+#chart1-explain{
+    margin-left: 15%;
+    margin-right:15%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid #696969;
+}
+
+#chart2-explain{
+    margin-left: 15%;
+    margin-right:15%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid #696969;
+}
+
+.help-popup-btn{
+    display: inline-block;
+    background-color: #0085CA;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 9px;
+    margin-top: 1rem;
+    text-decoration: none;
+}
+.help-popup-btn:hover{
+    cursor: pointer;
+    background-color: #003087;
+}
+
+.help-data{
+    display: none;
+}
+
