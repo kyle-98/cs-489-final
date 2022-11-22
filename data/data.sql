@@ -4,6 +4,6 @@ CREATE TABLE hurricanes (
   year INT NOT NULL,
   coords MEDIUMTEXT NOT NULL,
   data MEDIUMTEXT NOT NULL,
-  starting_month VARCHAR(30) NOT NULL,
+  starting_month MEDIUMTEXT NOT NULL,
   highest_wind INT NOT NULL,
   named_storm_days INT NOT NULL);
